@@ -2,10 +2,6 @@ const User = require("../models/user");
 const braintree = require("braintree");
 require('dotenv').config();
 
-// BRAINTREE_MERCHANT_ID=mtdf65ygd5gvgfhv
-// BRAINTTREE_PUBLIC_KEY=tkq3ft3t35yd8qfw
-// BRAINTREE_PRIVATE_KEY=27ed2b6954a60b093d84b1bc7ec4ac6c
-
 
 const gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
